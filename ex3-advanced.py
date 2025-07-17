@@ -7,7 +7,6 @@ h = [1. + math.sin(1 + x / .6) * w[0] + math.sin(-.3 + x / 9.) * w[1] + math.sin
 
 def climb(x, h):
     summit = False
-
     while not summit:
         summit = True  # assume we've reached the summit unless a better spot is found
 
@@ -17,7 +16,6 @@ def climb(x, h):
                 x = x_new  # move to higher point
                 summit = False
                 break      # optional: stop at first higher point found
-
     return x
 
 def main(h):
